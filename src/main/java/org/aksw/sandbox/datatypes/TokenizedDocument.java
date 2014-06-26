@@ -2,6 +2,20 @@ package org.aksw.sandbox.datatypes;
 
 public class TokenizedDocument {
 
-    public Entity[] entities;
+    /**
+     * Tokens of the documents text.
+     */
     public String tokens[];
+    /**
+     * Entities inside the text and their position.
+     */
+    public Entity[] entities;
+
+    public TokenizedDocument() {
+    }
+
+    public TokenizedDocument(String[] tokens, Entity[] entities) {
+        this.tokens = tokens;
+        this.entities = entities;
+    }
 }
