@@ -17,27 +17,33 @@ public class AxelsPreprocessing {
         return createMatrix(tokenizedDocuments);
     }
 
-    private static DocumentWithPositions getTokenizedDocuments(String[] texts) {
+    protected static DocumentWithPositions getTokenizedDocuments(String[] texts) {
+        // TODO tokenize the texts
+        // for every token store its start and end (exclusive) position
+        return null;
+    }
+
+    protected static void performNER(DocumentWithPositions documentsWithPos) {
+        // TODO request entities from FOX
+        // for every entity store its start and end (exclusive) position
+    }
+
+    protected static TokenizedDocument mapEntitiesToTokens(DocumentWithPositions documentsWithPos) {
         // TODO Auto-generated method stub
         return null;
     }
 
-    private static void performNER(DocumentWithPositions documentsWithPos) {
-        // TODO Auto-generated method stub
-
-    }
-
-    private static TokenizedDocument mapEntitiesToTokens(DocumentWithPositions documentsWithPos) {
+    protected static Object createMatrix(TokenizedDocument tokenizedDocuments) {
         // TODO Auto-generated method stub
         return null;
     }
 
-    private static Object createMatrix(TokenizedDocument tokenizedDocuments) {
-        // TODO Auto-generated method stub
+    protected static String[] readCorpus(String corpusName) {
+        // TODO read corpus
         return null;
     }
 
-    private static String[] readCorpus(String corpusName) {
+    protected static String[] readCorpusFromXML(String corpusName) {
         // TODO read corpus
         return null;
     }
