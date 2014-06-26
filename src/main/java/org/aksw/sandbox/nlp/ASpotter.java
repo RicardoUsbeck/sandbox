@@ -1,4 +1,4 @@
-package org.aksw.sandbox;
+package org.aksw.sandbox.nlp;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

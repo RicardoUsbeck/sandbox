@@ -1,4 +1,4 @@
-package org.aksw.sandbox;
+package org.aksw.sandbox.nlp;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ public class Tokenizer {
 		this.tok = NLPGetter.getTokenizer(language);
 	}
 
-	private String[] tokenize(String document) {
+	public String[] tokenize(String document) {
 		List<String> list = tok.getTokens(document);
 		return list.toArray(new String[list.size()]);
 	}

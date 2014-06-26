@@ -1,4 +1,4 @@
-package org.aksw.sandbox;
+package org.aksw.sandbox.nlp;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -44,10 +44,10 @@ public class Fox extends ASpotter {
 	}
 
 	@Override
-	public List<Entity> getEntities(String question) {
+	public List<Entity> getEntities(String text) {
 		List<Entity> list = new ArrayList<>();
 		try {
-			String foxJSONOutput = doTASK(question);
+			String foxJSONOutput = doTASK(text);
 
 			JSONParser parser = new JSONParser();
 			JSONArray jsonArray = (JSONArray) parser.parse(foxJSONOutput);
