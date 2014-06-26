@@ -11,6 +11,8 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.util.List;
 
+import org.aksw.sandbox.datatypes.Entity;
+
 public abstract class ASpotter {
 
 	public abstract List<Entity> getEntities(String question);

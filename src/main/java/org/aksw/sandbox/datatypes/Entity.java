@@ -1,4 +1,4 @@
-package org.aksw.sandbox;
+package org.aksw.sandbox.datatypes;
 
 public class Entity {
 	public int start;
